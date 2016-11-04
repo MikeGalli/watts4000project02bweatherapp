@@ -12,7 +12,7 @@
   .controller('AboutCtrl', function ($scope, photos) {
     $scope.photos = photos.query();
 
-    $scope.refreshCurrent = function(){
+    $scope.refreshPhotos = function(){
         $scope.photos = photos.query({
             title: $scope.title
         });
