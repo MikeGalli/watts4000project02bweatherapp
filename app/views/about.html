@@ -1,1 +1,33 @@
 <p>This is the about view.</p>
+<div ng-controller="AboutCtrl">
+  <h1>Weather for </h1>
+  <div ng-repeat="photo in photos.photos.photo">
+
+    <img ng-src={{photo.url_l}}>
+
+  </div>
+
+
+  <!--<p class="lead">
+    <div ng-init="title='Another Rainy Day'">
+        <p>
+          <label for="title">Title:
+            <input type="text" name="title" ng-model="title">
+          </label>
+        </p>
+        <p>
+          <button class="btn btn-lg btn-primary" ng-click="refreshCurrent()">Get Current Weather</button>
+        </p>
+      <dl>
+        <dt>Currently</dt>
+        <dd>{{photos.photo[0].about}}</dd>
+        <dd>{{current.weather[0].description}}</dd>
+        <dt>Temperature</dt>
+        <dd>{{current.main.temp}}</dd>
+        <dt>Wind</dt>
+        <dd>{{current.wind.speed}} mph at {{current.wind.deg}} degrees</dd>
+        <dt>Clouds</dt>
+        <dd>{{current.clouds.all}}%</dd>
+      </dl>
+    </div>
+  </p> -->
