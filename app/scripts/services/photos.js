@@ -13,7 +13,7 @@ angular.module('watts4000project02bweatherappApp')
     // ...
 
     // Public API here
-    return $resource('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=d9d5cc05a654a396190ad3403494361f&tags=Sunny%2CClear&tag_mode=any&text=skyline&sort=relevance&lat=47.61&lon=-122.33&radius=2&extras=url_l&format=json&nojsoncallback=1', {}, {
+    return $resource('https://api.flickr.com/services/rest/?method=flickr.photos.search&api_key=35edbca3494716bac72f7f2719ccb167&tags=Sunny%2CClear&tag_mode=any&text=skyline&sort=relevance&lat=47.61&lon=-122.33&radius=2&extras=url_l&format=json&nojsoncallback=1', {}, {
       query: {
         method:'GET',
         params:{
